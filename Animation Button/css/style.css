@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+  background: darkcyan;
+}
+
+button {
+  margin: 0 80px;
+  width: 200px;
+  height: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(147, 16, 42);
+}
+
+span {
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}

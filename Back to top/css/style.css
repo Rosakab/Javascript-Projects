@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+#sectionOne {
+  background-color: crimson;
+  font-size: 50px;
+}
+
+#sectionTwo {
+  background-color: coral;
+  font-size: 50px;
+}
+
+#sectionThree {
+  background-color: brown;
+  font-size: 50px;
+}
+
+#sectionFour {
+  background-color: chocolate;
+  font-size: 50px;
+}
+
+.to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  background: bisque;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: black;
+  opacity: 0;
+  transition: all 0.9s ease-in-out;
+}
+
+.to-top.active {
+  opacity: 1;
+  bottom: 40px;
+}
+.to-top .fa-solid {
+  font-size: 23px;
+}

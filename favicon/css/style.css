@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family:fantasy;
+   background-color: rgb(246, 194, 116);
+   height: 100vh;
+}
+  
+.container{
+   text-align: center;
+}
+
+.container .btn{
+   width:200px;
+   font-family:fantasy;
+   color:black;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+   letter-spacing: 1px;
+}
+

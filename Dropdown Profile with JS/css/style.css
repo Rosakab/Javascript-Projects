@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.action {
+  position: fixed;
+  top: 25%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.action .profile {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.action .profile img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.action .menu {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  background:chocolate;
+  width: 350px;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.9s ease-in-out;
+  /* we put opacity zero to be hidden because we want to be appeared by clicking on the image */
+}
+
+.action .menu.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.action .menu h3 {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.action .menu h3 span {
+  font-size: 18px;
+}
+
+.action ul {
+  list-style: none;
+  padding: 0 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.action .menu ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.action .menu ul li i {
+  margin-right: 20px;
+}
+
+.action .menu ul a {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.action .menu::before {
+  content: " ";
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  background:chocolate;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+}
